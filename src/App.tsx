@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-import { MessageCircle, BookOpen, Heart, Globe, Phone, Users, Award, Lightbulb, Mic, Send, Menu, X, Bell } from 'lucide-react';
+import { AuthProvider, useAuth } from './contexts/AuthContext';
+import LoginPage from './components/LoginPage';
+import CoursesPage from './components/CoursesPage';
+import TeacherDashboard from './components/TeacherDashboard';
+import StudentDashboard from './components/StudentDashboard';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
@@ -9,8 +13,8 @@ import WellnessToolkit from './components/WellnessToolkit';
 import UserProfile from './components/UserProfile';
 import Footer from './components/Footer';
 
-
-function App() {
+const AppContent: React.FC = () => {
+  const { user, isLoading } = useAuth();
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [userProfile, setUserProfile] = useState({
@@ -22,8 +26,62 @@ function App() {
     preferredLanguage: 'hi'
   });
 
+  // Update userProfile when user logs in
+  React.useEffect(() => {
+    if (user) {
+      setUserProfile(prev => ({
+        ...prev,
+        name: user.name,
+        preferredLanguage: user.role === 'student' ? (user as any).preferredLanguage || 'hi' : 'hi'
+      }));
+    }
+  }, [user]);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-4 animate-pulse">
+            <span className="text-2xl">🎓</span>
+          </div>
+          <p className="text-gray-600">Loading AI Buddy...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (!user) {
+    return <LoginPage />;
+  }
+
+  // Teacher Dashboard - Separate interface for teachers
+  if (user.role === 'teacher') {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
+        <Header 
+          activeSection={activeSection}
+          setActiveSection={setActiveSection}
+          isMobileMenuOpen={isMobileMenuOpen}
+          setIsMobileMenuOpen={setIsMobileMenuOpen}
+          userProfile={userProfile}
+        />
+        
+        <main className="pt-16">
+          <TeacherDashboard />
+        </main>
+
+        <Footer />
+      </div>
+    );
+  }
+
+  // Student Interface - Different sections based on activeSection
   const renderSection = () => {
     switch (activeSection) {
+      case 'dashboard':
+        return <StudentDashboard />;
+      case 'courses':
+        return <CoursesPage />;
       case 'chat':
         return <ChatInterface userProfile={userProfile} />;
       case 'career':
@@ -58,6 +116,14 @@ function App() {
 
       <Footer />
     </div>
+  );
+};
+
+function App() {
+  return (
+    <AuthProvider>
+      <AppContent />
+    </AuthProvider>
   );
 }
 

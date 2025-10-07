@@ -33,12 +33,12 @@ const Footer: React.FC = () => {
                 <Heart className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold">Study Buddy</h3>
+                <h3 className="text-xl font-bold">AI Buddy</h3>
                 <p className="text-sm text-gray-400">for Students</p>
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Empowering students across all over India with AI-powered mental wellness support and career guidance.
+              Empowering students All Over India with AI-powered mental wellness support and career guidance.
             </p>
             <div className="flex space-x-4">
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">

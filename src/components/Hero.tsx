@@ -30,7 +30,7 @@ const Hero: React.FC<HeroProps> = ({ setActiveSection }) => {
           </h1>
 
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Mental wellness support and career guidance for students All Over India. 
+            Mental wellness support and career guidance for students in Tier-2/Tier-3 cities. 
             Talk to your AI companion in your preferred language, get personalized roadmaps, 
             and build confidence for your future.
           </p>

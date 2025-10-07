@@ -1,7 +1,8 @@
 # AI Buddy for Students - Mental Wellness & Career Platform
 
 ## 🎓 Project Overview
-Study Buddy for Students is a comprehensive platform designed to support mental wellness and career guidance for students in All Over India. The platform combines empathetic AI chat support with personalized career roadmaps and wellness tools.
+
+Study Buddy for Students is a comprehensive platform designed to support mental wellness and career guidance for students All Over India. The platform combines empathetic AI chat support with personalized career roadmaps and wellness tools.
 
 ## ✨ Features
 
@@ -139,7 +140,6 @@ src/
 ## 🚀 Deployment
 
 The project is configured for deployment on:
-- Bolt Hosting (current deployment)
 - Netlify
 - Vercel
 - Any static hosting service
