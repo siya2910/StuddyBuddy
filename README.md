@@ -1,4 +1,4 @@
-# AI Buddy for Students - Mental Wellness & Career Platform
+# StudyBuddy for Students - Mental Wellness & Career Platform
 
 ## 🎓 Project Overview
 
@@ -182,3 +182,4 @@ For technical support or questions about the platform, please refer to the docum
 
 
 **Made with ❤️ for students across India**
+
