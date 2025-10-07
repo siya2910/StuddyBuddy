@@ -2,7 +2,7 @@
 
 ## 🎓 Project Overview
 
-AI Buddy for Students is a comprehensive platform designed to support mental wellness and career guidance for students in Tier-2/Tier-3 cities across India. The platform combines empathetic AI chat support with personalized career roadmaps and wellness tools.
+StudyBuddy for Students is a comprehensive platform designed to support mental wellness and career guidance for students in Tier-2/Tier-3 cities across India. The platform combines empathetic AI chat support with personalized career roadmaps and wellness tools.
 
 ## ✨ Features
 
@@ -179,5 +179,6 @@ This project is created for educational and social impact purposes.
 For technical support or questions about the platform, please refer to the documentation or create an issue in the project repository.
 
 ---
+
 
 **Made with ❤️ for students across India**
