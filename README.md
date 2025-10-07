@@ -1,5 +1,5 @@
 # AI Buddy for Students - Mental Wellness & Career Platform
-
+![Platform Overview](images/Overview.png)
 ## 🎓 Project Overview
 
 Study Buddy for Students is a comprehensive platform designed to support mental wellness and career guidance for students All Over India. The platform combines empathetic AI chat support with personalized career roadmaps and wellness tools.
@@ -26,6 +26,23 @@ Study Buddy for Students is a comprehensive platform designed to support mental 
 - Multilingual interface (Hindi, English, Bengali, Tamil, Telugu, etc.)
 - Real-time chat with typing indicators
 - Interactive forms and dynamic content
+
+## 📸 Platform Screenshots
+
+| Student Dashboard | Course Management |
+|:---:|:---:|
+| ![Student Dashboard](images/Student_Dashboard.jpg) | ![Courses Overview](images/Courses.jpg) |
+| *Main student interface showing enrolled courses and progress* | *Browse available courses across different streams* |
+
+| Teacher Dashboard | Student Management |
+|:---:|:---:|
+| ![Teacher Dashboard](images/Teacher_Overview.jpg) | ![Student Management](images/Student_Management.jpg) |
+| *Educator dashboard with analytics and student tracking* | *Admin panel for monitoring student progress and performance* |
+
+| Course Management | AI Chat Interface |
+|:---:|:---:|
+| ![My Courses](images/My_Courses.jpg) | ![AI Chat](images/ai_chat.jpg) |
+| *Personal course dashboard and creation* | *Interactive AI chat for wellness support* |
 
 ## 🚀 Getting Started
 
