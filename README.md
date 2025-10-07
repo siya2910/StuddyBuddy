@@ -41,7 +41,7 @@ Study Buddy for Students is a comprehensive platform designed to support mental 
 
 | Course Management | AI Chat Interface |
 |:---:|:---:|
-| ![My Courses](images/My_Courses.jpg) | ![AI Chat](images/ai_chat.jpg) |
+| ![My Courses](images/My_Courses.jpg) | ![AI Chat](images/AI_Chat.jpg) |
 | *Personal course dashboard and creation* | *Interactive AI chat for wellness support* |
 
 ## 🚀 Getting Started
